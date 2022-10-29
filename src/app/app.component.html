@@ -1,0 +1,10 @@
+
+
+<router-outlet
+  (activate)="currentComponent = $event"
+></router-outlet>
+
+<app-donate-button
+  *ngIf="!isDonatePage()"
+  (click)="router.navigate(['doe'])"
+></app-donate-button>
