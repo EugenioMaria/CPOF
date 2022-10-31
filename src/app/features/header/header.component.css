@@ -1,0 +1,29 @@
+.navbar {
+  background: linear-gradient(0deg, rgba(115, 61, 203, 0.65), rgba(115, 61, 203, 0.65)), url(../../../assets/images/criancas_olhando_ceu.png);
+  background-size: cover;
+  align-items: start;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: x-large !important;
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  color: white !important;
+  border-color: white;
+}
+
+.white-icon {
+  color: white !important;
+}
+
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+.navbar-brand {
+  cursor: pointer;
+}
