@@ -6,11 +6,13 @@ import { HomeComponent } from './modules/home/home.component';
 const routes: Routes = [
   {
     path: "",
-    component: HomeComponent
+    component: HomeComponent,
+    title: "Caminhando para o Futuro"
   },
   {
     path: "doe",
-    component: DonateComponent
+    component: DonateComponent,
+    title: "Doações"
   }
 ];
 

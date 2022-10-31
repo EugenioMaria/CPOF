@@ -3,8 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FeaturesModule } from './features/features.module';
-import { HomeModule } from './modules/home/home.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DonateButtonComponent } from './features/donate-button/donate-button.component';
+import { SmallCardComponent } from './features/small-card/small-card.component';
+import { HeaderComponent } from './features/header/header.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -13,8 +16,11 @@ import { HomeModule } from './modules/home/home.module';
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
-    HomeModule,
-    FeaturesModule
+    BrowserAnimationsModule,
+    DonateButtonComponent,
+    SmallCardComponent,
+    HeaderComponent,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

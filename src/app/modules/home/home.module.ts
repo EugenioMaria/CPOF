@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FeaturesModule } from 'src/app/features/features.module';
 import { HomeComponent } from './home.component';
+import { SmallCardComponent } from 'src/app/features/small-card/small-card.component';
 
 
 
@@ -10,11 +10,7 @@ import { HomeComponent } from './home.component';
     HomeComponent
   ],
   imports: [
-    CommonModule,
-    FeaturesModule
-  ],
-  exports: [
-    HomeComponent
+    CommonModule
   ]
 })
 export class HomeModule { }
