@@ -22,7 +22,8 @@ import { HomeModule } from './modules/home/home.module';
     HeaderComponent,
     FooterComponent,
     NgbModule,
-    HomeModule
+    HomeModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

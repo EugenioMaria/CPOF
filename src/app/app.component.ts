@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { DonateComponent } from './modules/donate/donate.component';
 
 @Component({
@@ -16,8 +17,11 @@ export class AppComponent {
   currentRouterOutletComponent!: Component
 
   constructor(
-    protected router: Router
+    protected router: Router,
+    private modalService: NgbModal
   ) {}
 
   isDonatePage = () => this.currentRouterOutletComponent instanceof DonateComponent
+
+  openDonateScreen = () => this.modalService.open(DonateComponent)
 }
