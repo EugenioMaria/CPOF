@@ -1,0 +1,19 @@
+.card {
+  border: none;
+}
+
+.card-body {
+  border: 2px solid #FF5D55;
+}
+
+button {
+  width: 150px;
+  height: 28px;
+
+  background: #FF5D55;
+  color: white;
+  font-size: 16px;
+
+  border-width: 0;
+  border-radius: 100px;
+}

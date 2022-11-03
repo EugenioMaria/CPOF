@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
-import { SmallCardComponent } from 'src/app/features/small-card/small-card.component';
+import { BigCardComponent } from 'src/app/features/big-card/big-card.component';
 
 
 
@@ -10,7 +10,8 @@ import { SmallCardComponent } from 'src/app/features/small-card/small-card.compo
     HomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    BigCardComponent
   ]
 })
 export class HomeModule { }

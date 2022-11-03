@@ -1,9 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
 
-* {
-  font-family: 'Baloo 2', cursive;
-}
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -24,4 +20,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #a8bbbf;
+}
+
+h1 {
+  color: #733DCB;
 }

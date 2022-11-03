@@ -5,9 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DonateButtonComponent } from './features/donate-button/donate-button.component';
-import { SmallCardComponent } from './features/small-card/small-card.component';
 import { HeaderComponent } from './features/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FooterComponent } from './features/footer/footer.component';
+import { HomeModule } from './modules/home/home.module';
 
 @NgModule({
   declarations: [
@@ -18,9 +19,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     BrowserAnimationsModule,
     DonateButtonComponent,
-    SmallCardComponent,
     HeaderComponent,
-    NgbModule
+    FooterComponent,
+    NgbModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
