@@ -28,6 +28,10 @@ app-footer {
   padding: 0;
 }
 
+::ng-deep .donate-modal {
+  margin-top: 100px;
+}
+
 @media only screen and (max-width: 600px) {
   .page {
     padding-top: 70px;

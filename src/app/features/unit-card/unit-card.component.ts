@@ -23,4 +23,7 @@ export class UnitCardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openMaps(street: string) {
+    window.open("https://www.google.com.br/maps/place/" + street, '_blank')
+  }
 }

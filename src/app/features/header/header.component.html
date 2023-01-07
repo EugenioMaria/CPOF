@@ -10,10 +10,10 @@
 
     <div class="collapse navbar-collapse justify-content-end" [(ngbCollapse)]="isCollapse" id="navbar-nav">
       <ul class="navbar-nav text-end" (click)="isCollapse = !isCollapse">
-        <li class="nav-item" (click)="router.navigate(['/doe'])"><a class="nav-link">Quem somos</a></li>
-        <li class="nav-item" (click)="router.navigate(['/'])"><a class="nav-link">Projetos</a></li>
-        <li class="nav-item" (click)="router.navigate(['/'])"><a class="nav-link">Núcleos</a></li>
-        <li class="nav-item" (click)="router.navigate(['/'])"><a class="nav-link">Ajude</a></li>
+        <li class="nav-item" (click)="windowLocation('/#description')"><a class="nav-link">Quem somos</a></li>
+        <li class="nav-item" (click)="windowLocation('/#projects')"><a class="nav-link">Projetos</a></li>
+        <li class="nav-item" (click)="windowLocation('/#nucleus')"><a class="nav-link">Núcleos</a></li>
+        <li class="nav-item" (click)="openDonateScreen()"><a class="nav-link">Ajude</a></li>
         <li class="nav-item" (click)="router.navigate(['/'])"><a class="nav-link">Parceiros</a></li>
         <li class="nav-item" (click)="router.navigate(['/'])"><a class="nav-link">Contato</a></li>
       </ul>

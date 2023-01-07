@@ -23,5 +23,7 @@ export class AppComponent {
 
   isDonatePage = () => this.currentRouterOutletComponent instanceof DonateComponent
 
-  openDonateScreen = () => this.modalService.open(DonateComponent)
+  openDonateScreen = () => this.modalService.open(DonateComponent, {
+    windowClass: "donate-modal"
+  })
 }

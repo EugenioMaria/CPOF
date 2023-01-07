@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Router } from '@angular/router';
-import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbCollapseModule, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { DonateComponent } from '../../modules/donate/donate.component';
 
 @Component({
   selector: 'app-header',
@@ -23,10 +24,18 @@ export class HeaderComponent implements OnInit {
 
   constructor(
     protected router: Router,
-    private elementRef: ElementRef
+    private elementRef: ElementRef,
+    private modalService: NgbModal
   ) { }
 
   ngOnInit(): void {
   }
 
+  windowLocation(location: string) {
+    window.location.href = location
+  }
+  
+  openDonateScreen = () => this.modalService.open(DonateComponent, {
+    windowClass: "donate-modal"
+  })
 }

@@ -5,7 +5,7 @@
     <p class="card-text">{{ firstSubtitle }}</p>
     <p class="card-text">{{ secondSubtitle }}</p>
 
-    <p class="card-text">{{ address }}</p>
+    <p class="card-text address" (click)="openMaps(address)">{{ address }}</p>
     <p class="card-text">{{ phoneNumber }}</p>
     <p class="card-text">{{ facebook }}</p>
   </div>
