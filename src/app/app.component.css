@@ -5,6 +5,10 @@
   min-height: 100vh;
 }
 
+::ng-deep app-donate {
+  padding-right: 10px !important;
+}
+
 app-donate-button {
   position: fixed;
   right: 3vw;
@@ -26,6 +30,10 @@ app-footer {
 
 .container-fluid {
   padding: 0;
+}
+
+::ng-deep .modal-content {
+  margin-bottom: 150px;
 }
 
 ::ng-deep .donate-modal {

@@ -1,0 +1,13 @@
+.pixCopiaeColaValue {
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.qrcode {
+  margin: 5px;
+  padding: 0px;
+}
+
+.cnpj {
+  cursor: pointer;
+}
