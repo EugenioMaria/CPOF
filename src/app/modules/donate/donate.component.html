@@ -26,7 +26,15 @@
       <div class="col-12 col-md-12">
         <div class="row">
           <h2>Doar nota fiscal automaticamente</h2>
-          <p>Doe para o CNPJ: <b class="cnpj" (click)="copyToClipboard(pixCopiaeColaValue)">47389788000133</b>
+          <h5>Passo a passo para cadastro de doação automática:</h5>
+          <ul class="passo-a-passo-doar-fiscal">
+            <li>Entre em <a href="https://www.nfp.fazenda.sp.gov.br/login.aspx" target="_blank"><b>https://www.nfp.fazenda.sp.gov.br/login.aspx</b></a></li>
+            <li>Informe CPF/CNPJ e senha para logar</li>
+            <li>Continue até o menu principal</li>
+            <li>Vá na aba "Entidades" e clique em "Doação de Cupons com CPF (automática)"</li>
+            <li>Pesquise pelo CNPJ <b class="cnpj" (click)="copyToClipboard(pixCopiaeColaValue)">47.389.788/0003-03</b> e avance</li>
+            <li>Confime a doação e esta pronto, muito obrigado(a)!</li>
+          </ul>
           <br>
           <iframe width="100%" height="315" src="https://www.youtube.com/embed/RDKe9ODRt4E?start=21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
