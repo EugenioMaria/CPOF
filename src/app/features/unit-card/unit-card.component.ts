@@ -17,6 +17,7 @@ export class UnitCardComponent implements OnInit {
   @Input() email: string = ""
   @Input() phoneNumber: string = ""
   @Input() facebook: string = ""
+  @Input() instagram: string = ""
 
   constructor() { }
 
